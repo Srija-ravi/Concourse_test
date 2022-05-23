@@ -1,0 +1,12 @@
+---
+platform: linux
+image_resource:
+  type: docker-image
+  source:
+    repository: python
+    tag: "latest"
+inputs:
+  - name: git-res2
+run:
+  path: /bin/sh
+  args: ["git-res2/folder2/test.sh"]
